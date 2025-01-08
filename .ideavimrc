@@ -184,11 +184,20 @@ noremap gy <ESC>:action CopyReference<CR>
 noremap gp <ESC>:action ParameterInfo<CR>
 
 " goto source
-noremap gi <ESC>:action GotoImplementation<CR>
+noremap <leader>gi <ESC>:action GotoImplementation<CR>
 " goto declaration
-noremap gd <ESC>:action GotoDeclaration<CR>
+noremap <leader>gd <ESC>:action GotoDeclaration<CR>
 " goto file
-noremap gf <ESC>:action GotoFile<CR>
+noremap <leader>f <ESC>:action GotoFile<CR>
+noremap <leader>g <ESC>:action GotoSymbol<CR>
+noremap <leader>gl <ESC>:action GotoLine<CR>
+" goto class
+noremap <leader>gcs <ESC>:action GotoClass<CR>
+" jump to next error
+noremap <leader>gne <ESC>:action GotoNextError<CR>
+" jump to previous error，就近原则
+noremap <leader>gpe <ESC>:action GotoPreviousError<CR>
+
 " g
 "noremap gg <ESC>:action MUST_NOT_BE_CHANGED!!!<CR>
 " hierarchy
@@ -199,8 +208,6 @@ noremap ghm <ESC>:action MethodHierarchy<CR>
 noremap gj <ESC>:action SliceBackward<CR>
 " k analyze data flow out
 noremap gk <ESC>:action SliceForward<CR>
-" l
-noremap gl <ESC>:action GotoLine<CR>
 
 " z
 "noremap gz <ESC>:action <CR>
@@ -208,14 +215,8 @@ noremap gl <ESC>:action GotoLine<CR>
 "noremap gv <ESC>:action <CR>
 " b
 noremap gb <ESC>:action FindBugs.CurrentFileAction<CR>
-" goto class
-noremap gcs <ESC>:action GotoClass<CR>
-" goto symbol
-noremap gs <ESC>:action GotoSymbol<CR>
-" jump to next error
-noremap gne <ESC>:action GotoNextError<CR>
-" jump to previous error，就近原则
-noremap gpe <ESC>:action GotoPreviousError<CR>
+
+
 
 " \ also works
 "noremap \q <ESC>:action <CR>
