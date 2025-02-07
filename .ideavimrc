@@ -38,8 +38,6 @@ inoremap <C-k> <Up>
 inoremap <C-h> <left>
 inoremap <C-l> <Right>
 imap <leader>o <Esc>o
-" 回车即选中当前项
-inoremap <expr> <CR>       pumvisible() ? "\<C-y>" : "\<CR>"
 
 " 插入模式粘贴
 " + for the clipboard,
